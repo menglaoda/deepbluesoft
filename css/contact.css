@@ -1,0 +1,26 @@
+.head-nav a:nth-child(6) .nav-line{
+	width: 100%;
+}
+.address{
+	width: 50vw;
+	margin: 0 auto;
+}
+.address li{
+	font-size: 30px;
+	margin: 2vw 0px;
+	color: #666;
+	display: flex;
+	justify-content: space-between;
+}
+.address li span:first-child{
+	width: 10%;
+}
+.address li span:last-child{
+	width: 80%;
+}
+.address a{
+	color: blue;
+}
+.address a:hover{
+	color: red;
+}

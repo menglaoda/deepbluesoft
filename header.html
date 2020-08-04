@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<article class="head">
+			<header class="head-content">
+				<img class="logo" src="img/ship.png" />
+				<nav class="head-nav">
+					<a href="homePage.html">
+						<span>首页</span>
+						<div class="nav-line"></div>
+					</a>
+					<a href="company.html">
+						<span>公司介绍</span>
+						<div class="nav-line"></div>
+					</a>
+					<a href="news.html">
+						<span>新闻活动</span>
+						<div class="nav-line"></div>
+					</a>
+					<a href="business.html">
+						<span>业务服务</span>
+						<div class="nav-line"></div>
+					</a>
+					<a href="collaborate.html">
+						<span>校企合作</span>
+						<div class="nav-line"></div>
+					</a>
+					<a href="contact.html">
+						<span>联系我们</span>
+						<div class="nav-line"></div>
+					</a>
+				</nav>
+			</header>
+			<section class="banner">
+				<img src="img/00.jpg" />
+				<img src="img/01.jpg" />
+				<img src="img/00.jpg" />
+				<img src="img/01.jpg" />
+				<div class="prev-btn"></div>
+				<div class="next-btn"></div>
+				<ul class="banner-tg">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</section>
+		</article>
+	</body>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			//轮播图
+			var i = 0;
+			var timer = setInterval(mybanner,5000);
+			function mybanner(){
+				i++;
+				if(i==$(".banner img").length){
+					i=0;
+				}
+				$(".banner img").css("opacity",0);
+				$(".banner img").eq(i).css("opacity",1);
+				icon();
+			}
+			function icon(){
+				$(".banner-tg li").css("background","transparent");
+				$(".banner-tg li").eq(i).css("background","#ddd");
+			}
+			$(".banner").mouseenter(function(){
+				clearInterval(timer);
+			})
+			$(".banner").mouseleave(function(){
+				timer = setInterval(mybanner,5000);
+			})
+			$(".next-btn").click(function(){
+				mybanner();
+			})
+			$(".prev-btn").click(function(){
+				i--;
+				if(i<0){
+					i=$(".banner img").length-1;
+				}
+				$(".banner img").css("opacity",0);
+				$(".banner img").eq(i).css("opacity",1);
+				icon();
+			})
+			$(".banner-tg li").click(function(){
+				i=$(this).index();
+				$(".banner img").css("opacity",0);
+				$(".banner img").eq(i).css("opacity",1);
+				icon();
+			})
+		})
+	</script>
+</html>

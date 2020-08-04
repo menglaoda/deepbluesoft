@@ -1,0 +1,46 @@
+.new1-con{
+	
+}
+.nav-hd{
+	height: 50px;
+    line-height: 50px;
+    padding: 0px 5vw;
+	background: #f7f7f7;
+    
+}
+.new-info{
+	width: 90vw;
+	margin: 1vw auto;
+	margin-bottom: 20px;
+    
+}
+.new-title{
+	text-align: center;
+    font-size: 24px;
+    padding: 30px 0px 20px;
+    font-weight: 500;
+}
+.new-time{
+	font-size: 14px;
+    color: #ccc;
+    padding: 10px 0px;
+    text-align: center;
+}
+.line{
+	width: 80%;
+	margin: 20px auto;
+	border-bottom: dashed 1px #ddd;
+}
+.new-txt{
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px 0px;
+    font-size: 16px;
+    line-height: 34px;
+    text-indent: 32px;
+}
+.new-info img{
+	display: block;
+    width: 60%;
+    margin: 10px auto;
+}

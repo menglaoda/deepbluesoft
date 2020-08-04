@@ -1,0 +1,9 @@
+.head-nav a:nth-child(3) .nav-line{
+	width: 0%;
+}
+.head-nav a:nth-child(3):hover .nav-line{
+	width: 100%;
+}
+.head-nav a:nth-child(5) .nav-line{
+	width: 100%;
+}
