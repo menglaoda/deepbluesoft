@@ -5,61 +5,59 @@
 	display: flex;
 	height: 53px;
 	align-items: flex-end;
-	background: #f7f7f7;
+	
 }
 .nav-tab a{
 	color: #5F6464;
 	padding-bottom: 10px;
-	font-size: 18px;
+	font-size: 16px;
 	margin-right: 5vw;
 	border-bottom: solid 2px #f7f7f7;
 }
 .nav-tab a:first-child{
-	margin-left: 5vw;
+	margin-right: 5vw;
 	border-bottom: solid 2px blue;
 }
 #introduction{
 	overflow: hidden;
-	padding: 30px 0px 60px;
 }
 .info-title{
-	font-size: 30px;
+	font-size: 20px;
     color: #2a2e2e;
     font-weight: 500;
     text-align: center;
     margin: 30px 0px;
 }
 #introduction p{
-	width: 70%;
-	margin: 0 auto 25px;
-	line-height: 32px;
-	text-indent: 30px;
+	margin: 0 auto 10px;
+	line-height: 30px;
+	text-indent: 32px;
 	color: #5F6464;;
 }
 #framework{
 	overflow: hidden;
-	padding: 30px 0px 60px;
-	background: #f7f7f7;
+	
 }
 #framework img{
-	width: 80%;
+	width: 76vw;
+	max-width: 800px;
 	display: block;
 	margin: 0 auto;
 }
 .environment{
-	padding: 0px 5vw 30px;
 	overflow: hidden;
 }
 .company-con{
 	display: flex;
+	justify-content: space-between;
 	margin-top: 20px;
+	flex-wrap: wrap;
 }
 .company-con li{
+	width: 24%;
+	margin-bottom: 15px;
 	position: relative;
 	overflow: hidden;
-}
-.company-con li:nth-child(2){
-	margin: 0px 1vw;
 }
 .company-con img{
 	display: block;
@@ -81,25 +79,25 @@
 	left: 50%;
 	margin-left: -50px;
 	margin-top: -20px;
-	font-size: 30px;
+	font-size: 20px;
 	color: white;
-	font-weight: 600;
 }
 #record{
 	overflow: hidden;
-	padding: 30px 0px 60px;
-	background: #f7f7f7;
+	padding: 30px 0px 60px;	
 }
 #record p{
 	margin-bottom: 15px;
 	text-align: center;
+	color: #666;
 }
 #culture{
 	overflow: hidden;
-	background: white;
 	display: flex;
 	justify-content: space-between;
-	padding: 30px 5vw 60px;
+}
+.culture-con{
+	padding-right: 20px;
 }
 .culture-con .info-title{
 	text-align: left;
@@ -110,12 +108,22 @@
 	height: 31vw;
 }
 #culture p{
-	margin-bottom: 1.5vw;
+	margin-bottom: 1vw;
 	font-size: 16px;
 	color: #2A2E2E;
 }
 #culture b{
-	font-size: 20px;
+	font-size: 16px;
     color: #2A2E2E;
     font-weight: 500;
+}
+@media  screen and (max-width: 480px) {
+	.nav-tab {
+	    display: flex;
+	    height: auto;
+	    flex-wrap: wrap;
+	}
+	.nav-tab a{
+		
+	}
 }

@@ -8,7 +8,10 @@
 		<article class="head">
 			<header class="head-content">
 				<img class="logo" src="img/ship.png" />
-				<nav class="head-nav">
+				<div class="menu-btn">
+					<span></span>
+				</div>
+				<nav class="head-nav off">
 					<a href="homePage.html">
 						<span>首页</span>
 						<div class="nav-line"></div>
@@ -54,6 +57,20 @@
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(function(){
+			//菜单按钮
+			$(".menu-btn").click(function(){
+				if($(".head-nav").hasClass("off")){
+					$(".head-nav").slideDown(function(){
+						$("body").css("overflow","hidden");
+						$(".head-nav").removeClass("off");
+					});
+				}else{
+					$(".head-nav").slideUp(function(){
+						$("body").css("overflow","visible");
+						$(".head-nav").addClass("off");
+					})
+				}	
+			})
 			//轮播图
 			var i = 0;
 			var timer = setInterval(mybanner,5000);
@@ -94,6 +111,7 @@
 				$(".banner img").eq(i).css("opacity",1);
 				icon();
 			})
+			
 		})
 	</script>
 </html>

@@ -4,13 +4,13 @@
 .news-notice{
 	height: 50px;
 	line-height: 50px;
-	background: #f7f7f7;
 	overflow: hidden;
 	display: flex;
-	padding: 0px 5vw;
+	border-bottom: solid 1px #ddd;
 }
 .news-notice h3{
 	font-weight: 500;
+	font-size: 20px;
 }
 .notice-box{
 	position: relative;
@@ -36,12 +36,12 @@
 .news-con{
 	display: flex;
 	justify-content: space-between;
-	padding: 50px 5vw;
 	border-bottom: solid 1px #ccc;
 	position: relative;
+	padding-top: 2vw;
 }
 .news-con h3{
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 500;
 }
 .news-list li{
@@ -51,15 +51,19 @@
 .news-list a{
 	color: #1f92ec;
     display: block;
-    font-size: 22px;
+    font-size: 16px;
 }
 .news-list a:hover{
 	color: red;
 }
 .news-list p {
-    font-size: 16px;
+    font-size: 14px;
     color: rgb(51,51,51);
-    padding: 10px 0px;
+    padding: 2px 0px;
+}
+.news-list p:nth-child(2) {
+    font-size: 12px;
+    color: rgba(51,51,51,0.8);
 }
 .news-r a{
 	display: block;
