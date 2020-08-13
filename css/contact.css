@@ -6,17 +6,13 @@
 	margin: 0 auto;
 }
 .address li{
-	font-size: 30px;
+	font-size: 16px;
 	margin: 2vw 0px;
 	color: #666;
 	display: flex;
-	justify-content: space-between;
 }
-.address li span:first-child{
-	width: 10%;
-}
-.address li span:last-child{
-	width: 80%;
+.address li span{
+	margin-right: 15px;
 }
 .address a{
 	color: blue;
