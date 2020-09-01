@@ -122,8 +122,48 @@
 	    display: flex;
 	    height: auto;
 	    flex-wrap: wrap;
+	    padding-top: 10px;
 	}
 	.nav-tab a{
-		
+		padding-bottom: 5px;
+		margin-bottom: 10px;
+	}
+	.info-title{
+		margin: 15px 0px;
+	}
+	#introduction p {
+	    font-size: 14px;
+	    color: #666;
+	}
+	#framework img {
+	    width: 94%;
+	}
+	.company-con li {
+	    width: 100%;
+	}
+	#record p {
+	    font-size: 14px;
+	}
+	#record {
+	    padding: 10px 0px 20px;
+	}
+	#culture {
+	    display: block;
+	}
+	#culture p {
+	    margin-bottom: 10px;
+	    font-size: 14px;
+	    color: #666;
+	}
+	#culture b {
+		color: #666;
+	    font-size: 14px;
+	}
+	.culture-con .info-title {
+	    margin: 0px 0px 20px;
+	}
+	#culture img {
+	    width: 100%;
+	     height: auto; 
 	}
 }

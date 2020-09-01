@@ -27,7 +27,7 @@ body{
 	position: relative;
 	top: 0px;
 	display: block;
-	margin: 40vh auto 5vh;
+	margin: 35vh auto 3vh;
 	animation: mylogo1 0.5s linear 10  forwards;
 }
 @keyframes mylogo1{
@@ -157,6 +157,18 @@ body{
 	position: relative;
 	overflow: hidden;
 }
+.business-con li .zhe{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: rgba(0,0,0,.4);
+	display: none;
+}
+.business-con li:hover .zhe{
+	display: block;
+}
 .business-con img{
 	width: 100%;
 	height: 100%;
@@ -173,6 +185,7 @@ body{
 	left: 0px;
 	transition: all 0.5s;
 	padding: 20px;
+	z-index: 30;
 }
 .business-con li:hover div{
 	bottom: 0px;
@@ -191,18 +204,24 @@ body{
 	font-size: 14px;
 }
 @media screen and (max-width:480px ) {
+	.mylogo{
+		width: 150px;
+	}
 	.company-con{
 		flex-wrap: wrap;
 	}
 	.company-con li {
 	    width: 100%;
-	    margin-bottom: 20px;
+	    margin-bottom: 15px;
+	}
+	.company-con li:last-child {
+	    margin-bottom: 0px;
 	}
 	.company-con li:nth-child(2) {
-	    margin: 0px 0px 20px;
+	    margin: 0px 0px 15px;
 	}
 	.company-con span{
-		font-size: 24px;
+		font-size: 20px;
 		font-weight: 500;
 	}
 	.news-con{
@@ -212,12 +231,18 @@ body{
 		width: 100%;
 		height: auto;
 	}
+	.news-hd{
+		margin-top: 15px;
+	}
+	.news-hd h3{
+		font-size: 16px;
+		color: #333;
+	}
 	.news-list{
 		width: 100%;
 		padding: 10px 0px 0px;
 	}
 	.news-list li{
-		
 		margin: 10px 0px;
 		padding:10px;
 		border-radius: 4px;
@@ -229,6 +254,9 @@ body{
 		width: 100%;
     	height: 50vw;
 	}
+	.business-con li .zhe{
+		display: block;
+	}
 	.business-con div{
 		width: 90%;
 		top:5vw;
@@ -239,17 +267,20 @@ body{
 	}
 	.business-con h3{
 		margin: 0px 20px 5px;
-		font-size: 24px;
+		font-size: 16px;
 		font-weight: 500;
-		color: #333;
+		color: white;
 	}
 	.business-con p{
 		font-size: 14px;
 		margin: 0px 20px;
 		line-height: 20px;
-		color: #666;
+		color: white;
 	}
 	.business-con li:hover div{
 		top: 5vw;
+	}
+	.company-introduction{
+		padding-bottom: 0px;
 	}
 }

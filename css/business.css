@@ -104,7 +104,7 @@
 }
 @media screen and (min-width: 1600px) {
 	.software-list li{
-		width: 19vw;
+		width: 18vw;
 		height: 14vw;
 	}
 	.left-shade,.right-shade{
@@ -179,4 +179,64 @@
 	font-size: 16px;
 	color: #5f6464;;
 	margin-top: 2vw;
+	line-height: 26px;
+}
+@media screen and (max-width: 480px) {
+	.nav-tab a {
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    .con-title {
+	    margin: 15px 0px 15px;
+	}
+	.txt {
+	    width: 100%;
+	    line-height: 24px;
+	    font-size: 14px;
+	     margin-bottom: 5px; 
+	}
+	.software-list{
+		display: block;
+	}
+	.software-list li{
+		width: 100%;
+		height: auto;
+		box-sizing: border-box;
+	}
+	.left-shade, .right-shade {
+	    border: none;
+	    background: rgba(0,0,0,0.3);
+	    opacity: 0.6;
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    top: -0px;
+	    left: -0px;
+	    transition: none;
+	}
+	.right-shade {
+	    display: none;
+	}
+	.software-list li .info {
+	    height: 60%;
+	    transform: rotate(0deg);
+	}
+	.epiboly {
+	    display: block;
+	    padding: 15px 0px 0px;
+	}
+	.epiboly-list{
+		width: 100%;
+	}
+	.epiboly-list p {
+		font-size: 14px;
+	    margin-bottom: 2vw;
+	}
+	.epiboly>img {
+	    width: 100%;
+
+	}
+	.jy>img{
+		margin-bottom: 15px;
+	}
 }

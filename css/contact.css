@@ -20,3 +20,17 @@
 .address a:hover{
 	color: red;
 }
+@media screen and (max-width:480px ) {
+	.address {
+	    width: 96vw;
+	    margin: 0 auto;
+	}
+	.address li{
+		font-size: 14px;
+		margin: 4vw 0px;
+	}
+	.address li span {
+	    padding: 0;
+	    width: 50px;
+	}
+}

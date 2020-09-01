@@ -4,7 +4,7 @@
 .head-content{
 	display: flex;
 	height: 60px;
-	padding: 0px 10vw;
+	padding: 0px 4vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -13,11 +13,11 @@
 	border-bottom: solid 1px #ddd;
 }
 .logo{
-	width: 130px;
+	width: 80px;
 }
 .menu-btn{
 	width: 22px;
-	height: 12px;
+	height: 17px;
 	border-top: solid 3px #1F92EC;
 	border-bottom: solid 3px #1F92EC;
 	display: none;
@@ -123,6 +123,9 @@
 	font-size: 14px;
 	color: #999;
 }
+.ft .p2{
+	display: none;
+}
 .ft img{
 	width: 3vw;
 }
@@ -135,24 +138,24 @@
 }
 @media screen and (max-width: 480px) {
 	.logo{
-		width: 140px;
+		width: 50px;
 	}
 	.head-content{
-		height: 60px;
+		height: 50px;
 		position: fixed;
 		width: 100%;
 		top: 0px;
 		left: 0px;
-		z-index: 30;
+		z-index: 99;
 	}
 	.menu-btn{
 		display: flex;
 	}
 	.head-nav{
 		width: 100%;
-		height: calc(100vh - 60px);
+		height: 100%;
 		position: fixed;
-		top: 60px;
+		top: 50px;
 		left: 0px;
 		display: none;
 		z-index: 30;
@@ -173,7 +176,7 @@
 		display: none;
 	}
 	.banner{
-		margin-top: 60px;
+		margin-top: 50px;
 		height: 40vh;
 	}
 	.news-hd h3{
@@ -186,12 +189,18 @@
 		display: block;
 		font-size: 12px;
 		height: auto;
-		padding: 10px 0px;
+		padding: 15px 0px;
 	}
 	.ft p{
 		line-height: 16px;
 		padding: 0px 5vw;
 		color: #666;
+		display: none;
+	}
+	.ft .p2{
+		display: block;
+		text-align: center;
+    	font-size: 12px;
 	}
 	.ft img{
 		display: none;

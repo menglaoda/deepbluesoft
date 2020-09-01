@@ -35,3 +35,8 @@ body{
 		padding: 0vw 20vw 3vw;
 	}
 }
+@media screen and (max-width: 480px) {
+	.wrap{
+		padding: 0vw 4vw 3vw;
+	}
+}
